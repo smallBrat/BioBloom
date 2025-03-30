@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - GreenConnect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="auth-body">
+    <header>
+        <h1 class="logo">GreenConnect</h1>
+        <div class="menu-icon">&#9776;</div>
+        <!-- Side Menu -->
+        <nav class="side-menu" id="sideMenu">
+            <a href="index.html">Home</a>
+            <a href="signup.html">Register</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Background -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Join GreenConnect</h2>
+            <form class="register-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <select required>
+                    <option value="" disabled selected>Select Role</option>
+                    <option value="resident">Resident</option>
+                    <option value="farm">Nursery Farm</option>
+                </select>
+                <button type="submit" class="btn">Register</button>
+            </form>
+            <p>Already have an account? <a href="sign-in.html">Sign In</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 GreenConnect. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

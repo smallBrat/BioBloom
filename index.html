@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nursery Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .btn {
+            display: inline-block;
+            background-color: white;
+            color: black;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Nursery Connect</div>
+        <div class="menu-icon" id="menuIcon">&#9776;</div> <!-- 3-line menu icon -->
+    </header>
+
+    <!-- Side Menu -->
+    <nav class="side-menu" id="sideMenu">
+        <a href="#">Home</a>
+        <a href="signup.html">Register</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Connecting Homes & Nursery Farms</h2>
+            <p>Turn your home waste into valuable manure and get rewarded with free saplings!</p>
+            <a href="signup.html" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Nursery Connect. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const menuIcon = document.getElementById("menuIcon");
+        const sideMenu = document.getElementById("sideMenu");
+
+        menuIcon.addEventListener("click", function () {
+            sideMenu.classList.toggle("active"); // Toggle visibility
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!menuIcon.contains(event.target) && !sideMenu.contains(event.target)) {
+                sideMenu.classList.remove("active"); // Close menu when clicking outside
+            }
+        });
+    </script>
+
+</body>
+</html>

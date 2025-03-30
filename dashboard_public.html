@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Dashboard | GreenConnect</title>
+    <link rel="stylesheet" href="public-styles.css">
+</head>
+<body class="dashboard-body">
+
+    <header>
+        <h1 class="logo">GreenConnect</h1>
+        <nav>
+            <a href="index.html">🏡 Home</a>
+            <a href="signout.html">🚪 Sign Out</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <h2>Welcome to Your Dashboard</h2>
+        <div class="dashboard-grid">
+            <div class="dashboard-box">
+                <h3>Nearby Nursery Farms</h3>
+                <ul>
+                    <li>🌿 Green Leaf Nursery - 2km away</li>
+                    <li>🌱 Eco Growth Nursery - 3.5km away</li>
+                    <li>🌾 Fresh Roots Nursery - 5km away</li>
+                </ul>
+            </div>
+
+            <div class="dashboard-box">
+                <h3>Your Waste Contribution</h3>
+                <p>You have contributed <strong>5kg</strong> of organic waste this month.</p>
+            </div>
+
+            <div class="dashboard-box">
+                <h3>Reward Points</h3>
+                <p><strong>50</strong> Reward Points</p>
+                <a href="redeem.html">
+                    <button class="btn">Redeem Sapling</button>
+                </a>
+            </div>
+
+            <div class="dashboard-box">
+                <h3>Schedule Waste Collection/Drop-off</h3>
+                <form>
+                    <label for="nursery">Select Nursery Farm:</label>
+                    <select id="nursery" required>
+                        <option value="green-leaf">Green Leaf Nursery (9 AM - 5 PM)</option>
+                        <option value="eco-growth">Eco Growth Nursery (10 AM - 6 PM)</option>
+                        <option value="fresh-roots">Fresh Roots Nursery (8 AM - 4 PM)</option>
+                    </select>
+
+                    <label for="timing">Choose Available Time Slot:</label>
+                    <select id="timing" required>
+                        <option value="9-10">9:00 - 10:00 AM</option>
+                        <option value="10-11">10:00 - 11:00 AM</option>
+                        <option value="2-3">2:00 - 3:00 PM</option>
+                        <option value="4-5">4:00 - 5:00 PM</option>
+                    </select>
+
+                    <button type="submit" class="btn">Confirm Schedule</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

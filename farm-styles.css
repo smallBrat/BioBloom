@@ -1,0 +1,81 @@
+/* Apply Index Page Background */
+.dashboard-body {
+    background: url('pexels-greta-hoffman-7728943.jpg') no-repeat center center/cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Grid Layout */
+.dashboard-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2-column layout */
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Dark Blurred Blocks */
+.dashboard-box {
+    background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Blurred effect */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.dashboard-box:hover {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.9); /* Slightly darker on hover */
+}
+
+/* Button Styling */
+.btn {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #1b5e20;
+}
